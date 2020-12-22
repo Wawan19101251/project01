@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\tugasuts;
+use App\Model\kategori;
 
 class Prak10Controller extends Controller
 {
@@ -15,8 +15,8 @@ class Prak10Controller extends Controller
     public function index()
     {
         //Menampilkan data dari table kategori
-        $KData = kategoris::get();
-        $JRek = kategoris::count();
+        $KData = kategori::get();
+        $JRek = kategori::count();
 
         return view('praktikum10.tugas1',compact('KData','JRek') );
     }

@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/prak10','Prak10Controller@tugas1');
+Route::get('/tugasuts','tugasutsController@tugasuts');
+
+Route::resource('/prak10','Prak10Controller');
+
+Route::resource('/prak11','Prak11Controller');
