@@ -20,3 +20,19 @@ Route::get('/tugasuts','tugasutsController@tugasuts');
 Route::resource('/prak10','Prak10Controller');
 
 Route::resource('/prak11','Prak11Controller');
+
+Route::get('/','BooksController@index');
+
+Route::get('back','BooksController@back');
+
+Route::get('create','BooksController@create');
+
+Route::post('insert', 'BooksController@insert');
+
+Route::get('delete/{id}','BooksController@delete');
+
+Route::get('edit/{id}','BooksController@edit');
+
+Route::post('update/{id}', 'BooksController@update');
+
+Route::get('read/{id}','BooksController@read');
